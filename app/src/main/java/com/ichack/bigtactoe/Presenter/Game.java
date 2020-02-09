@@ -7,12 +7,24 @@ public class Game {
   private int bigI = -1;
   private int bigJ = -1;
 
+  public int getBigI() {
+    return bigI;
+  }
+
+  public int getBigJ() {
+    return bigJ;
+  }
+
   public Game() {
     this.bigTable = new BigTable();
     this.currPlayer = BigSquareState.PLAYERX;
   }
 
   private boolean isMoveValid(int i, int j, int givenBigI, int givenBigJ) {
+    if (bigTable.isGameFinished()) {
+      return false;
+    }
+
     if (givenBigI != bigI || givenBigJ != bigJ) {
       return false;
     }

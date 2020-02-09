@@ -1,7 +1,10 @@
 package com.ichack.bigtactoe.View;
 
+import android.graphics.Color;
+import android.provider.CalendarContract;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -151,13 +154,16 @@ public class MainActivity extends AppCompatActivity {
         smallButtons[i][j].setOnClickListener(new OnClickListener() {
           @Override
           public void onClick(View v) {
+
             SquareState player = game.makeMove((finalI %3) + 1, (finalJ %3) + 1, (finalI / 3) + 1, (finalJ / 3) + 1);
             if(player == SquareState.PLAYERX){
               smallButtons[finalI][finalJ].setImageResource(R.drawable.x_drawable);
               messageTV.setText(R.string.o_message);
+
             } else if (player == SquareState.PLAYER0){
               smallButtons[finalI][finalJ].setImageResource(R.drawable.o_drawable);
               messageTV.setText(R.string.x_message);
+
             } else {
               Toast.makeText(MainActivity.this, "Invalid move, please try again", Toast.LENGTH_SHORT).show();
             }
@@ -171,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
                 images[index].setImageResource(R.drawable.o_drawable);
               } else if (smallGameState == BigSquareState.PLAYERX) {
                 images[index].setImageResource(R.drawable.x_drawable);
+                //smallButtons[finalI][finalJ].setVisibility(View.VISIBLE);
               } else {
                 images[index].setImageResource(R.drawable.draw);
               }
@@ -186,6 +193,19 @@ public class MainActivity extends AppCompatActivity {
               messageTV.setText("Player " + (bigGameWinner == BigSquareState.PLAYER0 ? "0" : "X") + " wins");
             }
 
+            int validI = game.getBigI();
+            int validJ = game.getBigJ();
+
+            if (validI == -1) {
+              for (int i1 = 0; i1 < 9; ++i1)
+                boards[i1].setBackgroundColor(Color.argb(60, 128,255,255));
+            } else {
+              int index1 = (validI - 1) * 3 + (validJ - 1);
+              boards[index1].setBackgroundColor(Color.argb(60, 128,255,255));
+              for (int i1 = 0; i1 < 9; ++i1)
+                if (i1 != index1)
+                  boards[i1].setBackgroundColor(Color.argb(60, 255, 255 ,255));
+            }
           }
         });
       }
