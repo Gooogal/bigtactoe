@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+  <ImageButton
+    android:id="@+id/imageButton31"
+    android:layout_width="40dp"
+    android:layout_height="40dp"/>
+  <ImageButton
+    android:id="@+id/imageButton32"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="3dp"
+    android:layout_toEndOf="@+id/imageButton31" />
+
+  <ImageButton
+    android:id="@+id/imageButton33"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginStart="3dp"
+    android:layout_toEndOf="@+id/imageButton32"/>
+
+  <ImageButton
+    android:id="@+id/imageButton34"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/imageButton31"
+    android:layout_marginTop="10dp" />
+
+  <ImageButton
+    android:id="@+id/imageButton35"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/imageButton32"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/imageButton34" />
+
+  <ImageButton
+    android:id="@+id/imageButton36"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/imageButton33"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/imageButton35" />
+  <ImageButton
+    android:id="@+id/imageButton37"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/imageButton34"
+    android:layout_marginTop="10dp" />
+
+  <ImageButton
+    android:id="@+id/imageButton38"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/imageButton35"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/imageButton37" />
+  <ImageButton
+    android:id="@+id/imageButton39"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/imageButton36"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="10dp"
+    android:layout_toEndOf="@+id/imageButton38" />
+</RelativeLayout>

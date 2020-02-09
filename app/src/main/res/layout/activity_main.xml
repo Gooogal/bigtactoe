@@ -6,27 +6,35 @@
   android:layout_height="match_parent"
   tools:context=".MainActivity"
   android:id="@+id/mainActivity"
-  android:paddingTop="150dp"
+  android:paddingTop="30dp"
   android:paddingStart="5dp">
 
-  <include layout="@layout/board1"
-    android:id="@+id/board1"/>
   <include
-    android:id="@+id/board2"
+    android:id="@+id/board1"
     layout="@layout/board1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_below="@+id/MessageTV"
+    android:layout_marginTop="80dp" />
+  <include
+    android:id="@+id/board2"
+    layout="@layout/board2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_marginStart="10dp"
+    android:layout_marginTop="80dp"
     android:layout_toEndOf="@+id/board1" />
   <include
     android:id="@+id/board3"
-    layout="@layout/board1"
+    layout="@layout/board3"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_below="@+id/MessageTV"
     android:layout_marginStart="10dp"
-    android:layout_toEndOf="@+id/board2"/>
+    android:layout_marginTop="80dp"
+    android:layout_toEndOf="@+id/board2" />
 
-  <include layout="@layout/board1"
+  <include layout="@layout/board4"
     android:id="@+id/board4"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -34,7 +42,7 @@
     android:layout_marginTop="30dp"/>
   <include
     android:id="@+id/board5"
-    layout="@layout/board1"
+    layout="@layout/board5"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="10dp"
@@ -43,7 +51,7 @@
     android:layout_marginTop="30dp"/>
   <include
     android:id="@+id/board6"
-    layout="@layout/board1"
+    layout="@layout/board6"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="10dp"
@@ -51,7 +59,7 @@
     android:layout_below="@id/board3"
     android:layout_marginTop="30dp"/>
 
-  <include layout="@layout/board1"
+  <include layout="@layout/board7"
     android:id="@+id/board7"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -59,7 +67,7 @@
     android:layout_marginTop="30dp"/>
   <include
     android:id="@+id/board8"
-    layout="@layout/board1"
+    layout="@layout/board8"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="10dp"
@@ -68,12 +76,105 @@
     android:layout_marginTop="30dp"/>
   <include
     android:id="@+id/board9"
-    layout="@layout/board1"
+    layout="@layout/board9"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="10dp"
     android:layout_toEndOf="@+id/board8"
     android:layout_below="@id/board6"
     android:layout_marginTop="30dp"/>
+  <TextView
+    android:id="@+id/MessageTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/board2"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginBottom="-40dp"
+    android:textAlignment="center"
+    android:text="@string/x_message"
+    android:textSize="20sp"/>
+  <ImageView
+    android:id="@+id/grid_done1"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="80dp" />
+
+  <ImageView
+    android:id="@+id/grid_done2"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_marginStart="133dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="80dp" />
+
+  <ImageView
+    android:id="@+id/grid_done3"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_marginStart="266dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="80dp" />
+
+
+
+  <ImageView
+    android:id="@+id/grid_done4"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="250dp" />
+
+  <ImageView
+    android:id="@+id/grid_done5"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_marginStart="133dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="250dp" />
+
+  <ImageView
+    android:id="@+id/grid_done6"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_marginStart="266dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="250dp" />
+
+
+
+  <ImageView
+    android:id="@+id/grid_done7"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="420dp" />
+
+  <ImageView
+    android:id="@+id/grid_done8"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_marginStart="133dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="420dp" />
+
+  <ImageView
+    android:id="@+id/grid_done9"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_marginStart="266dp"
+    android:layout_below="@+id/MessageTV"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="420dp" />
+
 
 </RelativeLayout>

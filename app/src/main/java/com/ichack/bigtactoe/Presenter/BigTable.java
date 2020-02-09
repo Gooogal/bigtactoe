@@ -1,8 +1,8 @@
 package com.ichack.bigtactoe.Presenter;
 
 public class BigTable {
-  private Table[][] bigTable;
-  private BigSquareState[][] status;
+  public Table[][] bigTable;
+  public BigSquareState[][] status;
 
   public BigTable() {
     this.bigTable = new Table[4][4];

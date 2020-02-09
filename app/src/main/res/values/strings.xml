@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">bigtactoe</string>
+  <string name="x_message">Player X, make your move</string>
+  <string name="o_message">Player 0, make your move</string>
 </resources>
