@@ -18,7 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.ichack.bigtactoe.MainActivity" >
+        <activity android:name="com.ichack.bigtactoe.View.MainActivity" />
+        <activity android:name="com.ichack.bigtactoe.View.PlayOnlineActivity" />
+        <activity android:name="com.ichack.bigtactoe.View.StartActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

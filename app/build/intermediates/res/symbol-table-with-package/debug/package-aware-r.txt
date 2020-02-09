@@ -682,6 +682,7 @@ id always
 id async
 id barrier
 id beginning
+id bigtactoe
 id blocking
 id board1
 id board2
@@ -705,6 +706,7 @@ id clip_vertical
 id collapseActionView
 id content
 id contentPanel
+id createButton
 id custom
 id customPanel
 id decor_content_parent
@@ -712,6 +714,7 @@ id default_activity_button
 id dimensions
 id direct
 id disableHome
+id editText4
 id edit_query
 id end
 id expand_activities_button
@@ -822,6 +825,7 @@ id imageButton99
 id info
 id invisible
 id italic
+id joinButton
 id left
 id line1
 id line3
@@ -841,6 +845,8 @@ id packed
 id parent
 id parentPanel
 id percent
+id play_offline
+id play_online
 id progress_circular
 id progress_horizontal
 id radio
@@ -894,6 +900,7 @@ id topPanel
 id uniform
 id up
 id useLogo
+id usernameET
 id withText
 id wrap
 id wrap_content
@@ -931,6 +938,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_play_online
+layout activity_start
 layout board1
 layout board2
 layout board3

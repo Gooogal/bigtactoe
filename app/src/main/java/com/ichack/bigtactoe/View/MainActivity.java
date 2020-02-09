@@ -1,8 +1,7 @@
-package com.ichack.bigtactoe;
+package com.ichack.bigtactoe.View;
 
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -11,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.ichack.bigtactoe.Presenter.BigSquareState;
 import com.ichack.bigtactoe.Presenter.Game;
-import com.ichack.bigtactoe.Presenter.Square;
 import com.ichack.bigtactoe.Presenter.SquareState;
+import com.ichack.bigtactoe.R;
 
 public class MainActivity extends AppCompatActivity {
 

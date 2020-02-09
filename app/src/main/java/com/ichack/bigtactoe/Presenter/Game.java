@@ -43,6 +43,11 @@ public class Game {
     bigI = i;
     bigJ = j;
 
+    if (bigTable.isSubGameDone(i, j) != BigSquareState.UNKNOWN) {
+      bigI = -1;
+      bigJ = -1;
+    }
+
     switch_player();
 
     return squareState;
