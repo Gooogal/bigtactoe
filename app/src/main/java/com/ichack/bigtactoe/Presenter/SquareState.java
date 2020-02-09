@@ -1,6 +1,8 @@
 package com.ichack.bigtactoe.Presenter;
 
-public enum SquareState {
+import java.io.Serializable;
+
+public enum SquareState implements Serializable {
   PLAYERX,
   PLAYER0,
   EMPTY
