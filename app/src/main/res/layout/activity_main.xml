@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity"
+  android:id="@+id/mainActivity"
+  android:paddingTop="150dp"
+  android:paddingStart="5dp">
+
+  <include layout="@layout/board1"
+    android:id="@+id/board1"/>
+  <include
+    android:id="@+id/board2"
+    layout="@layout/board1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/board1" />
+  <include
+    android:id="@+id/board3"
+    layout="@layout/board1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/board2"/>
+
+  <include layout="@layout/board1"
+    android:id="@+id/board4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/board1"
+    android:layout_marginTop="30dp"/>
+  <include
+    android:id="@+id/board5"
+    layout="@layout/board1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/board4"
+    android:layout_below="@+id/board2"
+    android:layout_marginTop="30dp"/>
+  <include
+    android:id="@+id/board6"
+    layout="@layout/board1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/board5"
+    android:layout_below="@id/board3"
+    android:layout_marginTop="30dp"/>
+
+  <include layout="@layout/board1"
+    android:id="@+id/board7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/board4"
+    android:layout_marginTop="30dp"/>
+  <include
+    android:id="@+id/board8"
+    layout="@layout/board1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/board7"
+    android:layout_below="@+id/board5"
+    android:layout_marginTop="30dp"/>
+  <include
+    android:id="@+id/board9"
+    layout="@layout/board1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_toEndOf="@+id/board8"
+    android:layout_below="@id/board6"
+    android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
