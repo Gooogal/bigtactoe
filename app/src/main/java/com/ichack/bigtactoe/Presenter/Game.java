@@ -43,7 +43,7 @@ public class Game {
     bigI = i;
     bigJ = j;
 
-    if (bigTable.isSubGameDone(i, j) != BigSquareState.UNKNOWN) {
+    if (bigTable.isSubGameDone(bigI, bigJ) != BigSquareState.UNKNOWN) {
       bigI = -1;
       bigJ = -1;
     }
