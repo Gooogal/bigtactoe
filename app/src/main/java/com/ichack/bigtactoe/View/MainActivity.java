@@ -1,5 +1,6 @@
 package com.ichack.bigtactoe.View;
 
+import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -16,12 +17,21 @@ import com.ichack.bigtactoe.R;
 public class MainActivity extends AppCompatActivity {
 
   ImageButton[][] smallButtons = new ImageButton[9][9];
-  Game game = new Game();
+  Game game;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+
+    try {
+      Intent intent = getIntent();
+      int id = intent.getIntExtra("gid", 0);
+      SquareState squareState = (SquareState) intent.getSerializableExtra("player");
+      game = new Game(id, squareState);
+    } catch(Exception e) {
+      game = new Game();
+    }
 
     final View[] boards = new View[9];
     boards[0] = findViewById(R.id.board1);
